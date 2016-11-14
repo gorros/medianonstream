@@ -4,6 +4,7 @@ Calculates median on stream with limited memory.
 Default buffer size is 1000. It should be at least twice large than 
 standard deviation of the sequence. 
 
+## Example
 ```golang
 	a := []float64{1,2,5.6,6,10,12,35,45,2,5,7,4.6,0}
 	mos := medianonstream.NewMedianOnStream(30)
@@ -30,3 +31,7 @@ Added  4.600, current median is 5.800
 Added  0.000, current median is 5.600
 
 ```
+
+
+###Notice
+The original version was written in Java by @shunanya
